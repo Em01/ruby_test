@@ -5,14 +5,17 @@ end
 
 # keep only the elements that start with a vowel
 def select_elements_starting_with_vowel(array)
+  array.select { |i| i[0] =~ /^[aeiou]/}
 end
 
 # remove instances of nil (but NOT false) from an array
 def remove_nils_from_array(array)
+  array.compact
 end
 
 # remove instances of nil AND false from an array
 def remove_nils_and_false_from_array(array)
+  array.select {|element| element }
 end
 
 # don't reverse the array, but reverse every word inside it. e.g.
