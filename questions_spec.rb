@@ -63,7 +63,7 @@ describe 'the Friday test :)' do
     expect(b).to eq 'app'
   end
 
-  specify 'make_numbers_negative' do
+  fit 'make_numbers_negative' do
     a = make_numbers_negative 5
     b = make_numbers_negative -7
 
@@ -71,7 +71,7 @@ describe 'the Friday test :)' do
     expect(b).to eq -7
   end
 
-  specify 'separate_array_into_even_and_odd_numbers' do
+  fit 'separate_array_into_even_and_odd_numbers' do
     n = separate_array_into_even_and_odd_numbers [1, 2, 3, 4, 5, 6, 7]
     expect(n).to eq [[2, 4, 6], [1, 3, 5, 7]]
   end
@@ -91,7 +91,7 @@ describe 'the Friday test :)' do
     expect(n).to eq 'different'
   end
 
-  specify 'total_of_array' do
+  fit 'total_of_array' do
     n = total_of_array [1, 3, 5, 6, 2, 8]
     expect(n).to eq 25
   end
@@ -101,17 +101,17 @@ describe 'the Friday test :)' do
     expect(n).to eq [1, 2, 3, 1, 2, 3]
   end
 
-  specify 'turn_symbol_into_string' do
+  fit 'turn_symbol_into_string' do
     n = turn_symbol_into_string :foobar
     expect(n).to eq 'foobar'
   end
 
-  specify 'average_of_array' do
+  fit 'average_of_array' do
     n = average_of_array [10, 15, 25]
     expect(n).to eq 17
   end
 
-  specify 'get_elements_until_greater_than_five' do
+  fit 'get_elements_until_greater_than_five' do
     n = get_elements_until_greater_than_five [1, 3, 5, 4, 1, 2, 6, 2, 1, 3, 7]
     expect(n).to eq [1, 3, 5, 4, 1, 2]
   end
@@ -141,12 +141,12 @@ describe 'the Friday test :)' do
     expect(n).to eq 'ello ohnoe'
   end
 
-  specify 'round_up_number' do
+  fit 'round_up_number' do
     n = round_up_number 3.142
     expect(n).to eq 4
   end
 
-  specify 'round_down_number' do
+  fit 'round_down_number' do
     n = round_down_number 4.9
     expect(n).to eq 4
   end
